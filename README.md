@@ -1,4 +1,4 @@
-## BookStore Api using Fast api
+## BookRecoder Api using Fast api
 
 # Build docker images
 
