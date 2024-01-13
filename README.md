@@ -12,6 +12,11 @@
 
 `make release`
 
+# Docker compose setup for development
+
+`make compose up`
+`make compose down`
+
 # Kubernetes deployment
 
 ` make kube-up`
