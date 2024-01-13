@@ -1,17 +1,33 @@
 ## BookStore Api using Fast api
 
+# Build docker images
+
+`make build`
+
+# push images to dockerhub (with git hash as release)
+
+`make push`
+
+# pull,tag with latest tag and push images to dockerhub
+
+`make release`
+
 # Kubernetes deployment
 
-`kubectl apply -f api.yaml`
+` make kube-up`
+
+` make kube-down`
 
 If working locally, e.g. using minikube, use port forwarding to expose the service:
 
-`kubectl port-forward service/kf-api-svc 8080`
+`make kube-port-forward`
 
 To scale the deployment, apply a HorizontalPodAutoscaler. Either:
 
-`kubectl apply -f autoscale.yaml`
+`make kube-autoscale-up`
 
-or:
+`make kube-autoscale-down`
 
-`kubectl autoscale deployment kf-api --cpu-percent=50 --min=1 --max=10`
+Delete All kubenetes resource in current namespace
+
+`make kube-down-all`
