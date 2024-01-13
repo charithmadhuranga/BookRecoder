@@ -37,3 +37,7 @@ To scale the deployment, apply a HorizontalPodAutoscaler. Either:
 Delete All kubenetes resource in current namespace
 
 `make kube-down-all`
+
+# Simple Database Design
+
+![image info](./assets/db-design.png)
